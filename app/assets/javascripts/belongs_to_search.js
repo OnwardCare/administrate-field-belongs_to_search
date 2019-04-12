@@ -25,7 +25,7 @@ $(function() {
             callback();
           },
           success: function(res) {
-            callback(res.resources);
+            callback(res);
           }
         });
       }
