@@ -1,20 +1,26 @@
 // belongs_to form
 $(function() {
-  $(".field-unit--belongs-to-search select").each(function initializeSelectize(index, element) {
+  $(".field-unit--belongs-to-search select").each(function initializeSelectize(
+    index,
+    element
+  ) {
     var $element = $(element);
     $element.selectize({
-      valueField: 'id',
-      labelField: 'dashboard_display_name',
-      searchField: 'dashboard_display_name',
+      valueField: "id",
+      labelField: "name",
+      searchField: "name",
+
+      // labelField: 'dashboard_display_name',
+      // searchField: 'dashboard_display_name',
       create: false,
-      searchUrl: $element.data('url') + '?search=',
+      searchUrl: $element.data("url") + "?search=",
 
       load: function(query, callback) {
         if (!query.length) return callback();
         var searchUrl = this.settings.searchUrl;
         $.ajax({
           url: searchUrl + encodeURIComponent(query),
-          type: 'GET',
+          type: "GET",
           error: function() {
             callback();
           },
@@ -22,7 +28,7 @@ $(function() {
             callback(res.resources);
           }
         });
-      },
+      }
     });
   });
 });
