@@ -16,14 +16,14 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'administrate', '>= 0.3', '< 1.0'
   gem.add_dependency 'jbuilder', '~> 2'
-  gem.add_dependency 'rails', '>= 4.2', '< 6.0'
+  gem.add_dependency 'rails', '>= 4.2', '< 7.0'
   gem.add_dependency 'selectize-rails', '~> 0.6'
 
   gem.add_development_dependency 'coveralls', '~> 0'
   gem.add_development_dependency 'factory_girl', '~> 4.8'
-  gem.add_development_dependency 'rake', '~> 12.0'
+  gem.add_development_dependency 'rake', '~> 13.0'
   gem.add_development_dependency 'rspec', '~> 3.4'
-  gem.add_development_dependency 'rubocop', '0.49.0'
+  gem.add_development_dependency 'rubocop', '0.75.0'
   gem.add_development_dependency 'simplecov', '~> 0'
   gem.add_development_dependency 'sqlite3', '~> 1.3'
 
