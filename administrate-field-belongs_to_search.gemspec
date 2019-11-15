@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-belongs_to_search'
-  gem.version = '0.7.0'.freeze
+  gem.version = '0.7.1'.freeze
   gem.authors = ['Klas Eskilson']
   gem.email = ['klas.eskilson@gmail.com']
   gem.homepage = 'https://github.com/fishbrain/administrate-field-belongs_to_search'
@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'administrate', '>= 0.3', '< 1.0'
   gem.add_dependency 'jbuilder', '~> 2'
-  gem.add_dependency 'rails', '>= 4.2', '< 7.0'
+  gem.add_dependency 'rails', '>= 5.2', '< 7.0'
   gem.add_dependency 'selectize-rails', '~> 0.6'
 
   gem.add_development_dependency 'coveralls', '~> 0'
